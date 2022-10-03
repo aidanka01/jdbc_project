@@ -2,9 +2,12 @@ package peaksoft.model;
 
 import javax.persistence.*;
 
-@Table
+@Entity
+@Table(name = "users_hibernate")
 public class User {
+
     @Id
+    @GeneratedValue
     private Long id;
 
     @Column

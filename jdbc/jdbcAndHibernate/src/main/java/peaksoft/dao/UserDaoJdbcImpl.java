@@ -30,7 +30,6 @@ public class UserDaoJdbcImpl implements UserDao {
     }
 
 
-
     public void dropUsersTable() {
         String sqlDrop = "DROP TABLE users";
         try (Connection connection2 = connect();
