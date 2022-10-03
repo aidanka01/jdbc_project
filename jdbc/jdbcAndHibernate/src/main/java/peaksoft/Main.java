@@ -12,7 +12,7 @@ public class Main {
         UserDaoHibernateImpl userDaoHibernate = new UserDaoHibernateImpl();
 
         // CREATE TABLE
-        userDaoHibernate.createUsersTable();
+       // userDaoHibernate.createUsersTable();
 
         // SAVE USER
         userDaoHibernate.saveUser("Ali", "Hamzaev", (byte) 31);
@@ -23,24 +23,24 @@ public class Main {
 
 
         // CLEAN users TABLE
-        userDaoHibernate.cleanUsersTable();
+       /* userDaoHibernate.cleanUsersTable();
 
         // REMOVE users BY ID
-        userDaoHibernate.removeUserById(2);
+        userDaoHibernate.removeUserById(2);*/
 
         // GET ALL users
-        userDaoHibernate.getAllUsers();
+       /* userDaoHibernate.getAllUsers();
         List<User> userHibernateList = userDaoHibernate.getAllUsers();
         System.out.println(userHibernateList);
-
+*/
         //DROP TABLE users
-        userDaoHibernate.dropUsersTable();
+    //    userDaoHibernate.dropUsersTable();
 
 
 
 
         // JDBC users
-        UserDaoJdbcImpl userDaoJdbc = new UserDaoJdbcImpl();
+       /* UserDaoJdbcImpl userDaoJdbc = new UserDaoJdbcImpl();
 
         //CREATE TABLE
         userDaoJdbc.createUsersTable();
@@ -64,7 +64,7 @@ public class Main {
 
         // DROP TABLE users
         userDaoJdbc.dropUsersTable();
-
+*/
 
     }
 }
